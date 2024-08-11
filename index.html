@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surpresa do Dia dos Pais</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <div class="stars">
+        <div class="star" style="top: 10%; left: 20%;"></div>
+        <div class="star" style="top: 30%; left: 50%;"></div>
+        <div class="star" style="top: 60%; left: 70%;"></div>
+        <div class="star" style="top: 80%; left: 10%;"></div>
+        <div class="star" style="top: 40%; left: 80%;"></div>
+        <div class="star" style="top: 20%; left: 40%;"></div>
+    </div>
+    <div class="container">
+        <img src="static/images/avatar.png" alt="Avatar" class="avatar">
+        <div class="balloon">
+            Surpresa!!! Clique abaixo para receber sua carta.
+        </div>
+        <form action="">
+            <label for="tipo_carta">Escolha o tipo de carta:</label>
+            <select name="tipo_carta" id="tipo_carta" onchange="updateDownloadLink()">
+                <option value="emocional">Carta Emocional</option>
+                <option value="divertida">Carta Divertida</option>
+                <option value="inspiradora">Carta Inspiradora</option>
+            </select>
+            <a id="downloadLink" href="static/files/carta_pai_emocional.pdf" download>
+                <button type="button">Baixar Carta</button>
+            </a>
+        </form>
+        
+        <div class="heart" style="top: 20%; left: 20%;"></div>
+        <div class="heart" style="top: 40%; left: 80%;"></div>
+        <div class="heart" style="top: 60%; left: 50%;"></div>
+    </div>
+    <script src="static/js/scripts.js"></script>
+</body>
+</ht
